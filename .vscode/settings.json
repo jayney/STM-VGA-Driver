@@ -1,0 +1,15 @@
+{
+  "files.associations": {
+    "init.h": "c",
+    "timer.h": "c",
+    "timer_common_f24.h": "c",
+    "timer_common_all.h": "c",
+    "rcc.h": "c",
+    "usart.h": "c",
+    "usart_common_f24.h": "c",
+    "usart_common_f124.h": "c",
+    "usart_common_all.h": "c",
+    "USART_COMMON_ALL.H": "cpp",
+    "dma.h": "c"
+  }
+}
