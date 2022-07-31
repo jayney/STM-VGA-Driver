@@ -1,5 +1,8 @@
 /*
+* MIT Licence
+*
 * Copyright 2022 Jayne Atkinson
+* Character Set Data Copyright (c) 2020 Carsten Herting (https://github.com/slu4coder/ArduinoVGA)
 *
 * Permission is hereby granted, free of charge, to any person obtaining a copy of this software
 * and associated documentation files (the "Software"), to deal in the Software without restriction,
