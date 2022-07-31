@@ -3,8 +3,7 @@
 A simple driver for STM32F4xx devices to produce VGA output using minimal CPU time
 
 This provides basic monochrome video output from a STM32F4 Microcontroller and was developed and tested on a Nucleo 446RE development board.
-It will probably port to other F4 devices, subject to available resources, with little or no modification. YMMV with other families, especially 
-"General Purpose" families such as F0/F3/L4 etc due to h/w differences, especially around the DMA resources
+It will probably port to other F4 devices, subject to available resources, with little or no modification. YMMV with other families, especially "General Purpose" families such as F0/F3/L4 etc due to h/w differences, especially around the DMA resources
 
    Resources Used:
    
