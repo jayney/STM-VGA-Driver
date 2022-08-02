@@ -75,9 +75,9 @@
 #include "vga.h"
 
 volatile uint8_t video_buffer[LINES][LINE_SIZE+1];
-uint8_t blank_line[LINE_SIZE+3];
-uint16_t current_line = 0;
-uint16_t scan_line = 0;
+volatile uint8_t blank_line[LINE_SIZE+3];
+volatile uint16_t current_line = 0;
+volatile uint16_t scan_line = 0;
 
 volatile uint8_t cursor_x = 0;
 volatile uint8_t cursor_y = 0;
@@ -281,6 +281,7 @@ static void timer_setup(void)
 	timer_set_master_mode(TIM3, TIM_CR2_MMS_UPDATE);
 	timer_enable_irq(TIM3, TIM_DIER_CC2IE);
   // Finally, enable both counters together. Almost.
+  // Timer 2 **before** Timer 3
 	timer_enable_counter(TIM2);
 	timer_enable_counter(TIM3);
 }
